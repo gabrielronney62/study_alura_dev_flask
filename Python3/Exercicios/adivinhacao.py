@@ -9,9 +9,15 @@ print("*********************************")
 
 numero_secreto = 42
 total_de_tentativas = 3
-rodada = 1
 
-while(rodada <= total_de_tentativas):
+# Descomentar em caso de utilização com o laço While
+# rodada = 1
+
+# Adicionando laço com While
+# while(rodada <= total_de_tentativas):
+
+# Adicionando mesma condição com laço For
+for rodada in range (1, total_de_tentativas + 1):
     print("Tentativa {} de {}".format(rodada, total_de_tentativas))
     chute_str = input("Digite um número: ")
     print("Você digitou ", chute_str)
@@ -29,7 +35,8 @@ while(rodada <= total_de_tentativas):
         elif(menor):
             print("Você errou! O seu chute foi menor que o número secreto.")
 
-    rodada = rodada + 1
+# Descomentar em caso de utilização com o laço While
+#     rodada = rodada + 1
 
 
 print("Fim do nosso jogo!")
