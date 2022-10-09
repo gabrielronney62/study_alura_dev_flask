@@ -24,6 +24,7 @@ def novo():
         return redirect('/login')
     return render_template('novo.html', titulo='Novo Jogo')
 
+# Comentário de teste
 @app.route('/criar', methods=['POST', ])
 def criar():
     nome = request.form['nome']
